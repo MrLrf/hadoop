@@ -18,11 +18,6 @@ public class MongoTest {
     public static void main(String[] args) {
         MongoUtil mongoUtil = new MongoUtil();
 
-//        List<Map<String, Object>> data = mongoUtil.getCollectionData("local", "test");
-//        for (Map<String, Object> map : data) {
-//            System.out.println(map);
-//        }
-
         List<Map<String, Object>> result = new ArrayList<>();
 
         MongoClient mongoClient = new MongoClient("127.0.0.1", 27017);
