@@ -12,7 +12,7 @@ import static com.mongodb.client.model.Filters.*;
 /**
  * 功能描述
  *
- * @Author lirf
+ * @author lirf
  * @Date 2017/9/7 14:44
  */
 public class MongoUtil {
