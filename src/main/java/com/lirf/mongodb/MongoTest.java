@@ -25,12 +25,7 @@ public class MongoTest {
         MongoDatabase mongoDatabase = mongoClient.getDatabase("local");
         MongoCollection<Document> collection = mongoDatabase.getCollection("test");
 
-        Block<Document> toListBlock = new Block<Document>() {
-            @Override
-            public void apply(final Document document) {
-                result.add(MongoUtil.document2Map(document));
-            }
-        };
+        Block<Document> toListBlock = document -> result.add(MongoUtil.document2Map(document));
 //        collection.find(and( )).forEach(toListBlock);
 //        mongoClient.close();
 //        System.out.println(result);
